@@ -8,6 +8,8 @@ import Setpoint from './images/SetPoint.jpg';
 import Petscare from './images/PetsCare.jpg';
 import Goodcar from'./images/Goodcar.jpg';
 import Participate from'./images/Participate.jpg';
+import Ayahshop from './images/Ayahshop';
+import Esolution from './images/Esolution';
 // import Sketch from './images/Sketch.jpg';
 // import Music from './images/Music.jpg';
 // import Coffeshop from './images/Coffeshop.jpg';
@@ -78,12 +80,14 @@ Today, we are proud to offer a wide range of software development services, incl
             <div className='references container'>
                 <h2>References Background</h2>
                 <div className='projects grid-wrapper'>
-                    <div className='box'><span className='details'>IT support for setpoint engineering 21/22</span><img alt='stpnt' rel='noopener noreferrer' src={Setpoint}/><Link className='link' to='https://set-point-engineering.business.site/' target='_blank'>go to SetPoint</Link></div>
-                    <div className='box'><span className='details'>android game Berzerk ball</span><img alt='bzball' rel='noopener noreferrer' src={Berzerkball}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.MoRa.BerZerkBall&hl=en_US/' target='_blank'>go to BerzerkBall</Link></div>
+                    <div className='box'><span className='details'>OnlineShop Ayashop</span><img alt='stpnt' rel='noopener noreferrer' src={Ayahshop}/><Link className='link' to='https://www.ayahshop.com/' target='_blank'>go to Ayahshop</Link></div>
+                    <div className='box'><span className='details'>Android game Berzerk ball</span><img alt='bzball' rel='noopener noreferrer' src={Berzerkball}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.MoRa.BerZerkBall&hl=en_US/' target='_blank'>go to BerzerkBall</Link></div>
+                    <div className='box'><span className='details'>Elearning app</span><img alt='bzball' rel='noopener noreferrer' src={Esolution}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.abgroupdevfactory.esolution' target='_blank'>go to esolution</Link></div>
                     <div className='box'><span className='details'>Bomb war space war shooting game</span><img alt='bmbwar' rel='noopener noreferrer' src={Bombwar}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.mora.bombwar&hl=en_US/' target='_blank'>go to BombWar</Link></div>
-                    <div className='box'><span className='details'>car trading project web app</span><img alt='gdcar' rel='noopener noreferrer' src={Goodcar}/><Link className='link' to='https://car-trade-client.vercel.app/' target='_blank'>go to GoodCar</Link></div>
-                    <div className='box'><span className='details'>participate/collaboration in NFT project</span><img alt='nft' rel='noopener noreferrer' src={Participate}/><span>No link</span></div>
-                    <div className='box'><span className='details'>pets care project mobile app</span><img alt='ptscre' rel='noopener noreferrer' src={Petscare}/><span>Not released yet</span></div>
+                    <div className='box'><span className='details'>Car trading project web app</span><img alt='gdcar' rel='noopener noreferrer' src={Goodcar}/><Link className='link' to='https://car-trade-client.vercel.app/' target='_blank'>go to GoodCar</Link></div>
+                    <div className='box'><span className='details'>Participate/collaboration in NFT project</span><img alt='nft' rel='noopener noreferrer' src={Participate}/><span>No link</span></div>
+                    <div className='box'><span className='details'>Pets care project mobile app</span><img alt='ptscre' rel='noopener noreferrer' src={Petscare}/><span>Not released yet</span></div>
+                    <div className='box'><span className='details'>IT support for setpoint engineering 21/22</span><img alt='stpnt' rel='noopener noreferrer' src={Setpoint}/><Link className='link' to='https://set-point-engineering.business.site/' target='_blank'>contact SetPoint</Link></div>
                 </div>
             </div>
                 <div className='thrdprt'>
