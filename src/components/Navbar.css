@@ -13,7 +13,7 @@
     gap: 60px;
     margin-left: 0;
 }
-a:link{
+a.link{
     text-decoration: none;
 }
 .link{
