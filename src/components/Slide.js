@@ -10,9 +10,9 @@ const Slide= ()=> {
         <div className="slde">
             <Slider dots slidesToShow={3}>
                 <div className='imgdv'><img className='imgs' alt='musc' src={Music}/></div>
+                <div className='imgdv'><img className='imgs' alt='cffshp' src={Coffeshop}/></div>
                 <div className='imgdv'><img className='imgs' alt='sktch' src={Sketch}/></div>
                 <div className='imgdv'><img className='imgs' alt='grph' src={Graph}/></div>
-                <div className='imgdv'><img className='imgs' alt='cffshp' src={Coffeshop}/></div>
                 <div className='imgdv'><img className='imgs' alt='prkapp' src={Parkapp}/></div>                               
             </Slider>
         </div>
