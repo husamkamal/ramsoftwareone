@@ -64,7 +64,7 @@ const Home = () => {
                     <div className='box'><span className='details'>Elearning app</span><img alt='bzball' rel='noopener noreferrer' src={Esolution}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.abgroupdevfactory.esolution' target='_blank'>E solution</Link></div>
                     <div className='box'><span className='details'>Mobile game space war shooting</span><img alt='bmbwar' rel='noopener noreferrer' src={Bombwar}/><Link className='link' to='https://play.google.com/store/apps/details?id=com.mora.bombwar&hl=en_US/' target='_blank'>Bomb War</Link></div>
                     <div className='box'><span className='details'>Car trading project web app</span><img alt='gdcar' rel='noopener noreferrer' src={Goodcar}/><Link className='link' to='https://car-trade-client.vercel.app/' target='_blank'>Good Car</Link></div>
-                    <div className='box'><span className='details'>IT support for setpoint engineering 2021</span><img alt='stpnt' rel='noopener noreferrer' src={Setpoint}/><Link className='link' to='https://set-point-engineering.business.site/' target='_blank'>contact SetPoint</Link></div>
+                    <div className='box'><span className='details'>IT support for setpoint engineering 2021</span><img alt='stpnt' rel='noopener noreferrer' src={Setpoint}/><Link className='link' to='https://set-point-engineering.business.site/' target='_blank'>SetPoint</Link></div>
                     <div className='box'><span className='details'>Participate/collaboration in NFT project</span><img alt='nft' rel='noopener noreferrer' src={Participate}/></div>
                 </div>
             </div>
