@@ -1,27 +1,27 @@
 .slde{
     height: 500px;
     width: 90%;
-    margin: 10px 20px;
+    margin: 0px 20px;
     padding: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(68, 74, 90),black)
 }
 .imgdv{
     width: 220px;
-    height: 80%;
+    height: 355px;
 }
 .imgs{
-    border: 2px solid rgb(37, 133, 243);
     border-radius: 5px;
-    height: 350px;
-    width: 80%;
-    padding: 5px;
-    
-    background-color: black;
-}
-.imgs>img{
     height: 100%;
-    width: 75%;
-    object-fit: cover;
-}
-
+    width: 80%;
+    padding: 4px;
+    background-color: black;
+} 
+@media only screen and (max-width: 900px) {
+    .imgs{
+        height: 90%;
+        padding: 2px;
+        width: 90%;
+  } } 
 
 

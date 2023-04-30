@@ -1,20 +1,113 @@
 .homefirstpart{
+    display: flex; 
+    flex-direction:column ;
+}  
+
+body {
+    margin: 0;
+  }
+  
+  /* ====================
+      Background
+  =======================*/
+  
+  .background {
+    width: 100%;
+    height: 100%;
+    animation: pulse 5s infinite;
+    overflow: hidden;
+  }
+  
+  @keyframes pulse {
+    0% {background: #859ecc;}
+    50% {background: #316a9e;}
+    100% {background: #859ecc;}
+  }
+  
+  .background p {
+    z-index: 999;
+    margin: 0;
+    color: #020316;
+    text-shadow: 4px 4px 4px rgba(255, 255, 255, 0.76);
+    text-transform: uppercase;
+    font-family: lato;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .elements {
+    height: 100vh;
     display: flex;
-}
-.notification{
-    display: flex;
-    flex-direction: column;
-    font-weight: 500;
-}
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* ====================
+        Squares
+  =======================*/
+  
+  .square {
+    border: 10px dashed #cafaf4;
+  }
+  
+  .sq2{
+    animation: move1 180s infinite;
+    animation-timing-function: linear;
+    width: 1110px;
+    height: 1110px;
+  }
+  
+  @keyframes move1 {
+    0% {
+      transform: rotate(0deg);
+      opacity: 0.5;
+    }
+    
+    50% {
+      width: 1000px;
+      height: 1000px;
+    }
+    
+    100% {
+       transform: rotate(1000deg);
+      opacity: 1;
+    }
+    }
+  
+  .sq3 {
+    width: 600px;
+    height: 600px;
+    animation: move1 120s infinite;
+    animation-timing-function: linear;
+  }
+  
+  .sq1 {
+    width: 500px;
+    height: 500px;
+    animation: move1 100s infinite;
+    animation-timing-function: linear;
+  }
+
 .aboutus{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     gap: 7px;
-    height: auto;
-    width: 70%;
-    background: linear-gradient(to right , rgb(111, 219, 247), gray)
+    /* height: auto; */
+    height: 40%;
+    width: 100%;
+    /* background: linear-gradient(to right , rgb(90, 218, 250), grgb(43, 61, 119)); */
+    background:no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 .sbjct{
     font-size: 24px;
     font-weight: 700;
@@ -23,14 +116,51 @@ hr{
     width: 30%;
     border: 1px solid white;
 }
+.cont{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+@media only screen and (max-width:900px){
+    .cont>img{
+        display: none;
+    }
+    
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    width: 57%;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.541);
+}
+@media only screen and (max-width:900px){
+    .cont{
+    justify-content: center;
+    }
+}
+@media only screen and (max-width:900px){
+    .info{
+    width: 90%;
+    background-color: rgba(243, 242, 242, 0.815);
+    }
+}
 .txt{
-    width: 80%;
+    width: 90%;
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 6px;
-    text-align: start;
+    margin: 5px 8px;
+    text-align: justify;
     line-height: 26pt;
 }
+@media only screen and (max-width:900px){
+    .txt{
+    font-size: 17px;
+    }
+}
+
 .img{
     border: 1px solid black;
     border-radius: 7px;
@@ -38,21 +168,9 @@ hr{
     width: 200px;
     height: auto;
 }
-.fungame{
-    height: auto;
-    width: 30%;
-    background-color: rgb(1, 3, 27);
-    color: white;
-    font-size: 18px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-.factspan{
-    min-width: 200px;
-    height: auto;
-}
+
 .journey{
-    background-color: rgba(197, 252, 233, 0.719);
+    background-color: rgba(158, 201, 252, 0.719);
     margin-top: 0;
     display: flex;
     flex-direction: row;
@@ -70,9 +188,9 @@ hr{
 }
 .scndimg{
     height: 300px;
-    width: 100%;
+    width: 40%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 15px 5px;
     border-radius: 5px;
     box-shadow: 7px 7px 6px rgba(26, 26, 27, 0.76);
@@ -80,28 +198,39 @@ hr{
 }
 @media only screen and (max-width: 900px) {
     .journeyimg{
-    max-height:250px;
+    max-height:100%;
     width: 100%;
-    /* margin: 2px; */
-    display: flex;
-    justify-content: center;
-    /* justify-items: center; */
-    object-fit: cover;
+    object-fit: fixed;
   } }
 
-
+.scndimg>img{
+    width: 100%;
+}
 .journeytxt{
-    /* display: flex; */
+    display: flex;
+    flex-direction: column;
     padding: 10px;
+    width: 50%;
+}
+@media only screen and (max-width:900px){
+    .journeytxt{
+    width: 90%;
+    }
+}
+.journeytxt>p{
+    font-size: 22px;
+    font-weight: 450;
+    text-align: justify;
+}
+@media only screen and (max-width:900px){
+    .journeytxt>p{
+    font-size: 19px;
+    font-weight: 400;
+    }
 }
 .journeyspan{
     font-size: 22px;
     font-weight: 500;
-}
-p{
-    font-size: 18px;
-    font-weight: 400;
-    text-align: start;
 }
 .ourservices{
     font-size: 20px;
@@ -129,7 +258,7 @@ li{
 .references{
     /* height: 300px; */
     color: azure;
-    background-color: black;
+    background: linear-gradient(to top, rgb(1, 11, 31), rgb(109, 111, 114), rgb(1, 11, 31));
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -155,20 +284,22 @@ li{
 	width: 100%;
     height: 223px;
     margin: 5px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    border-radius: 8px;
 }
 .details{
-	padding: 6px;
-    font-size: 22px;
+	padding: 3px;
+    font-size: 21px;
     font-weight: bold;
     color: black;
 }
 .box{
-	background: linear-gradient(to top, rgb(5, 16, 19), rgb(153, 248, 255));
+	background: linear-gradient(to top, rgb(1, 6, 29), rgb(183, 228, 248));
 	padding: 50px;
 	margin: 20px;
-    border-radius: 8px;
-    box-shadow: 4px 4px 3px rgba(147, 147, 153, 0.76);
+    border-radius: 15px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 2px rgba(147, 147, 153, 0.76);
 }
 .box:hover{
 	transform: rotate(2deg);
@@ -183,12 +314,19 @@ a:link{
 }
 .thrdprt{
     display: flex;
+    margin: 0;
     flex-direction: column;
     align-items: center;
-
+    background-color: rgb(0, 0, 0);
 }
 .design{
     font-size: 30px;
     font-weight: bold;
+    color: whitesmoke;
     margin: 5px;
 }
+@media only screen and (max-width: 900px) {
+    .design{
+    font-size: 17px;
+    margin: 1px;
+  } }

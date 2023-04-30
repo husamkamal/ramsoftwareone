@@ -10,6 +10,7 @@ const Navbar = ()=>{
             <div className="barcontent">
                 <Link to="/"><h3>Ramahi software </h3></Link>
                 <Link to="/contactus" className='link'><span>Contact us{/*{t('contact')}*/}</span></Link>
+                <Link to="/ourteam" className='link'><span>Our team{/*{t('contact')}*/}</span></Link>
             </div>
             
             {/* <div className="btns">

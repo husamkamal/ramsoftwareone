@@ -1,0 +1,28 @@
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.team{
+    text-decoration: underline;
+    margin: 20px;
+}
+
+.Mod{
+    margin: 25px;
+    margin-bottom: 50px;
+}
+.tm{
+    margin: 10px;
+}
+.desin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link2>span{
+    color: rgb(9, 7, 92);
+    align-items: center;
+    margin: 20px;
+    text-decoration: underline;
+}

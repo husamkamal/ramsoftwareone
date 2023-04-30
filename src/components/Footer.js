@@ -1,6 +1,6 @@
 const Footer = ()=> {
     return(
-        <div>Thank You</div>
+        <div> ... </div>
     )
 }
 

@@ -10,6 +10,7 @@ import {
   Outlet
 } from "react-router-dom";
 import Contactus from './pages/Contactus';
+import Ourteam from './pages/Ourteam';
 
 function App() {
   const LayOut=()=>{
@@ -33,6 +34,10 @@ function App() {
         {
           path:"/contactus",
           element:<Contactus/>
+        },
+        {
+          path:"/ourteam",
+          element:<Ourteam/>
         }
       ]
     },
