@@ -8,7 +8,12 @@ import Goodcar from'./images/Goodcar.jpg';
 import Participate from'./images/Participate.jpg';
 import Ayahshop from './images/AyahShop.jpg';
 import Esolution from './images/Esolution.jpg';
-import Technology from './images/technology.png'
+import Technology from './images/technology.png';
+import Computer from './images/computer.png';
+import It from './images/informationtechnology.png';
+import MobileApp from './images/mobileapp.png';
+import MobileG from './images/mobilegame.png';
+import Ui from './images/uidesign.png';
 // import Bckgrnd from './images/Bckgrnd.jpg';
 import Lap from './images/Lap.jpg'
 import { Link } from 'react-router-dom';
@@ -49,11 +54,11 @@ const Home = () => {
             <div className='ourservices'>
                 <div className='services'>{`Our services`}</div>
                 <ul>
-                    <li>IT support</li>
-                    <li>mobile games development</li>
-                    <li>Web apps development</li>
-                    <li>mobile apps development</li>
-                    <li>web & apps designing</li>
+                    <li>IT support <img alt='it' src={It}/></li>
+                    <li>mobile games development <img alt='game' src={MobileG}/></li>
+                    <li>Web apps development <img alt='web' src={Computer}/></li>
+                    <li>mobile apps development <img alt='app' src={MobileApp}/></li>
+                    <li>web & apps designing <img alt='dsgn' src={Ui}/></li>
                 </ul>
             </div>
             <div className='references container'>

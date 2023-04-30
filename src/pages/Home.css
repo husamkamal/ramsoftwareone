@@ -253,7 +253,10 @@ ul{
   } }
 li{
     margin: 4px;
-    text-decoration: none;
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    /* text-decoration: none; */
 }
 .references{
     /* height: 300px; */
